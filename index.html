@@ -57,8 +57,14 @@
     <p>Para ver un log de los cambios realizados sobre los archivos del proyecto se usa el comando <code>git show</code>
     </p>
     <p>Cuando hacemos un commit con errores tenemos 2 opciones eliminarlos para siempre o crregirlos, y para evitar o
-        resolver este tipo de cosas se usa el comando <code>git reset</code> pero antes tenemos q saber los commit q se
-        hayan echo usando el comando <code>git log --oneline</code></p>
+        resolver este tipo de cosas se usa el comando <code>git reset [id del commit al q se quiere regresar]</code>
+        pero antes tenemos q saber los commit q se
+        hayan echo usando el comando <code>git log --oneline</code>.
+        Existen dos tipos de reset <code>git reset [id del commit] --hard</code> que lo q hace es eliminar el commit
+        HEAD completo y el otro es <code>git reset [id del commit] --soft</code> que lo q hace es elminar el commit HEAD
+        pero mantiene los cambios en staging
+
+    </p>
 
 </body>
 
