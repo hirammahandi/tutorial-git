@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Git Tutorial</title>
+</head>
+
+<body>
+    <h1><a href="index.html">Ejemplo de trabajo con Git</a></h1>
+    <a href="autobiografia.html">Ejemplo de trabajo con Git: Autobiografia</a>
+    <p>
+        Para configurar el "username" y el "email" que va detectar Git se usa los
+        comandos <code>git --global user.name "nombre de usuario"</code> y
+        <code>git --global user.email "email"</code>.
+    </p>
+    <p>
+        Para listar todos los usuarios y emails que estan configurados en en git
+        se usa el comando <code>git config --get-all key[value]</code>.
+        ejemplo:<code>git config --get-all user.name</code>.
+    </p>
+    <p>
+        Para inicializar git en un proyecto se usa el comando
+        <code>git init</code> y es entonces q internamente git crea dos espacios
+        en memoria llamados "staging" y "repo", donde "repo" es una carpeta oculta q se llama .git e inicializa una rama
+        "master".
+    </p>
+    <p>
+        Para almacenar los archivos q van a ser versionados y/o actualizados y almacenados se usa
+        el comando <code>git add [nombre del archiv]</code> o
+        <code>git add .</code> para agregar todos los archivos dentro de la
+        carpeta del proyecto al espacio "staging".
+        Y para quitarlos del almacen (del staging) se usa el comando <code>git rm --cached [file]</code>
+    </p>
+    <p>Para restaurar los cambios hechos en cualkier fichero del proyecto se usa el comando
+        <code>git restore [file]</code></p>
+    <p>Para pasar los archivos del proyecto al "repo" se usa el comando <code>git commit</code> especificando un mensaje
+        descriptivo de lo que se va a subir
+        por tando el comnado seria <code>git commit -m "cualquier mensaje"</code></p>
+    <p>Git trabaja con ramas y la primera rama q crea es "master" donde se hace el primer commit. Es la rama donde se
+        guarda la version mas actual y funcional del proyecto el cual se llama "head".</p>
+    <p>Para ver el estado actual del proyecto se usa el comando <code>git status</code> que permite saber si los o algun
+        archivo del proyecto se encuentra en el estado "ontrack" u "track"</p>
+</body>
+
+</html>
