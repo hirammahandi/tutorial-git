@@ -33,10 +33,11 @@
         el comando <code>git add [nombre del archiv]</code> o
         <code>git add .</code> para agregar todos los archivos dentro de la
         carpeta del proyecto al espacio "staging".
-        Y para quitarlos del almacen (del staging) se usa el comando <code>git rm --cached [file]</code>
+        Y para eliminarlo del almacen (del staging) se usa el comando <code>git rm --cached [file]</code>
+        Y para sacarlo del staging se usa el comando <code>git restore --staged [file]</code>
     </p>
     <p>Para restaurar los cambios hechos en cualkier fichero del proyecto se usa el comando
-        <code>git restore [file]</code>
+        <code>git restore [file]</code>.
     </p>
     <p>Para pasar los archivos del proyecto al "repo" se usa el comando <code>git commit</code> especificando un mensaje
         descriptivo de lo que se va a subir
@@ -48,7 +49,10 @@
     <p>Para ver los commit q se han hecho se usa el comando <code>git log --oneline</code> mostrando los commit de la
         siguiente manera <small>id [(HEAD -> master) solo si el commit es el head] mensaje del commit.</small>
         Con el id del commit me permite acceder a ese commit y volver a esa version de lo q hice en el proyecto, es como
-        navegar por cada commit, y para ello se usa el comando <code>git checkout [id del commit]</code>
+        navegar por cada commit, y para ello se usa el comando <code>git checkout [id del commit].</code>
+        Si se quiere volver a la rama anterior se usa el comando <code>git switch -</code> y si lo que se quiere es
+        crear una subrama sobre el commit al que navegue se usa el comando
+        <code>git switch -c [nombre de la nueva subrama] para almacenar todos los cambios q se haya hecho sobre ese commit al q se navego sin afectar a los demas</code>
     </p>
 </body>
 
