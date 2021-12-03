@@ -50,7 +50,8 @@
         siguiente manera <small>id [(HEAD -> master) solo si el commit es el head] mensaje del commit.</small>
         Con el id del commit me permite acceder a ese commit y volver a esa version de lo q hice en el proyecto, es como
         navegar por cada commit, y para ello se usa el comando <code>git checkout [id del commit].</code>
-        Si se quiere volver a la rama anterior se usa el comando <code>git switch -</code> y si lo que se quiere es
+        Si se quiere volver a la rama mas actualizada con el commit mas reciente se usa el comando
+        <code>git switch -</code> y si lo que se quiere es
         crear una subrama sobre el commit al que navegue se usa el comando
         <code>git switch -c [nombre de la nueva subrama] para almacenar todos los cambios q se haya hecho sobre ese commit al q se navego sin afectar a los demas</code>.
     </p>
@@ -63,9 +64,10 @@
         Existen dos tipos de reset <code>git reset [id del commit] --hard</code> que lo q hace es eliminar el commit
         HEAD completo y el otro es <code>git reset [id del commit] --soft</code> que lo q hace es elminar el commit HEAD
         pero mantiene los cambios en staging
-
     </p>
-
+    <p>Para saber todas las ramas del proyecto se usa el comando <code>git branch</code>.
+        Para crear una rama en git se usa el comando <code>git branch [nombre de la rama]</code>
+    </p>
 </body>
 
 </html>
